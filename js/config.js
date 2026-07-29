@@ -1,0 +1,38 @@
+const convite = {
+  noivos: {
+    nome1: "Maria Luiza",
+    nome2: "Felipe"
+  },
+  data: "12 de Setembro de 2026",
+  dataISO: "2026-09-12T16:00:00",
+  horario: "16:00",
+  local: "1° Igreja Batista",
+  endereco: "1° Igreja Batista - Cassilândia, MS",
+  fotoPrincipal: "assets/images/casal-2.jpeg",
+  fotoFiltro: "grayscale(100%)",
+  frasePrincipal: "E viveram felizes para sempre...",
+  historia: [
+    { ano: "2019", texto: "O ano em que nossos caminhos se cruzaram" },
+    { ano: "2022", texto: "Nosso amor só cresceu e floresceu" },
+    { ano: "2026", texto: "O dia em que prometemos eternidade" }
+  ],
+  whatsapp: "5577999202792",
+  mensagemWhatsApp: "Olá! Confirmo minha presença no casamento de Maria Luiza & Felipe. Estarei lá! 😊",
+  googleMaps: "https://maps.google.com/?q=1%C2%B0+Igreja+Batista+Cassil%C3%A2ndia",
+  pix: "chavepix@mariaefelipe.com",
+  listaPresentes: "https://www.example.com/lista-presentes",
+  mensagemPresentes: "Sua presença é o melhor presente! Mas se quiser nos ajudar nessa nova jornada, aceitamos com carinho contribuições via Pix ou nossa lista de presentes online.",
+  musica: "assets/music/trilha.mpeg",
+  musicaHabilitada: true,
+  paleta: {
+    primary: "#D4AF37",
+    primaryLight: "#F0DFA0",
+    secondary: "#F5F0E8",
+    background: "#FAF8F5",
+    text: "#2C2C2C",
+    textLight: "#8A8A8A",
+    accent: "#C4956A",
+    dark: "#1A1A1A",
+    white: "#FFFFFF"
+  }
+};

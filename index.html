@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Luiza & Felipe - Convite de Casamento</title>
+  <meta name="description" content="Convite de Casamento - Maria Luiza & Felipe">
+  <link rel="icon" type="image/jpeg" href="assets/images/casal-2.jpeg">
+  <link rel="apple-touch-icon" href="assets/images/casal-2.jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <!-- ETAPA 1 - INTRO -->
+  <section id="intro" class="section">
+    <div id="particles-bg"></div>
+    <div class="intro-content">
+      <div class="intro-logo" id="introLogo">
+        <img src="assets/images/casal-2.jpeg" alt="M & F" class="intro-logo-img">
+      </div>
+      <p class="intro-label" id="introLabel">Você recebeu</p>
+      <div class="intro-divider" id="introDivider"></div>
+      <h1 class="intro-title" id="introTitle">uma mensagem<br>especial</h1>
+      <button class="btn-abrir glow-on-hover" id="btnAbrir">ABRIR CONVITE</button>
+    </div>
+  </section>
+
+  <!-- ETAPA 2 - ENVELOPE -->
+  <section id="envelope-section" class="section">
+    <div class="section-inner">
+      <div class="envelope-container" id="envelopeContainer">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap" id="envelopeFlap"></div>
+          <div class="envelope-body"></div>
+          <div class="wax-seal" id="waxSeal"></div>
+          <div class="letter-preview" id="letterPreview">
+            <span class="initial" id="envelopeInitials">M & F</span>
+          </div>
+        </div>
+      </div>
+      <p class="envelope-hint" id="envelopeHint">Clique no envelope para abrir</p>
+    </div>
+  </section>
+
+  <!-- ETAPA 3 - REVELAÇÃO DO CASAL -->
+  <section id="revelacao" class="section">
+    <div class="section-inner">
+      <div class="casal-photo-wrapper" id="casalPhotoWrapper">
+        <div class="glow-ring"></div>
+        <div class="casal-photo-placeholder" id="casalPhotoPlaceholder">M & F</div>
+      </div>
+      <h2 class="casal-names" id="casalNames">
+        <span id="nome1"></span>
+        <span class="casal-ampersand">&amp;</span>
+        <span id="nome2"></span>
+      </h2>
+      <p class="casal-phrase" id="casalPhrase"></p>
+      <p class="casal-date" id="casalDate"></p>
+    </div>
+  </section>
+
+  <!-- ETAPA 4 - CONVITE PRINCIPAL -->
+  <section id="convite-principal" class="section">
+    <div class="section-inner">
+      <div class="convite-card">
+        <div class="convite-decoration"></div>
+        <h2 class="convite-names" id="conviteNames">
+          <span id="convNome1"></span>
+          <span class="casal-ampersand">&amp;</span>
+          <span id="convNome2"></span>
+        </h2>
+        <p class="convite-subtitle">Têm a honra de convidar você para</p>
+        <div class="convite-divider"></div>
+        <div class="convite-info" id="conviteInfo">
+          <div class="convite-info-item">
+            <span class="label">Data</span>
+            <span class="value" id="convData"></span>
+          </div>
+          <div class="convite-info-item">
+            <span class="label">Horário</span>
+            <span class="value" id="convHorario"></span>
+          </div>
+          <div class="convite-info-item">
+            <span class="label">Local</span>
+            <span class="value" id="convLocal"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPA 5 - NOSSA HISTÓRIA -->
+  <section id="historia" class="section">
+    <div class="section-inner">
+      <h2 class="convite-title" style="margin-bottom: 3rem;">Nossa História</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ETAPA 6 - CONTAGEM REGRESSIVA -->
+  <section id="contagem" class="section">
+    <div class="section-inner">
+      <p class="countdown-title">Faltam</p>
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days">00</div>
+          <div class="countdown-label">Dias</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">00</div>
+          <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">00</div>
+          <div class="countdown-label">Minutos</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">00</div>
+          <div class="countdown-label">Segundos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPA 7 - LOCAL -->
+  <section id="local" class="section">
+    <div class="section-inner">
+      <div class="local-card">
+        <h2 class="local-name" id="localName"></h2>
+        <p class="local-address" id="localAddress"></p>
+        <p class="local-datetime" id="localDatetime"></p>
+        <div class="local-map" id="localMap"></div>
+        <a class="btn-primary solid" id="btnMapa" href="#" target="_blank" rel="noopener">
+          COMO CHEGAR
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPA 8 - CONFIRMAÇÃO -->
+  <section id="confirmacao" class="section">
+    <div class="section-inner">
+      <h2 class="convite-title" style="margin-bottom: 1.5rem;">Confirme sua Presença</h2>
+      <p class="confirmacao-text" id="confirmacaoText">
+        Sua presença é muito importante para nós.<br>
+        Confirme até breve!
+      </p>
+      <a class="btn-primary solid" id="btnWhatsApp" href="#" target="_blank" rel="noopener">
+        CONFIRMAR PRESENÇA
+      </a>
+    </div>
+  </section>
+
+  <!-- ETAPA FINAL - DESPEDIDA -->
+  <section id="despedida" class="section">
+    <div class="section-inner">
+      <p class="despedida-text" id="despedidaText">
+        Esperamos você para celebrar<br>
+        esse momento especial
+      </p>
+      <p class="despedida-sub">Maria Luiza &amp; Felipe</p>
+    </div>
+  </section>
+
+</body>
+</html>

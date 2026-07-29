@@ -89,8 +89,7 @@ function carregarDados() {
   document.getElementById('localMap').appendChild(iframe);
 
   document.getElementById('btnMapa').href = c.googleMaps;
-  document.getElementById('btnWhatsApp').href =
-    `https://wa.me/${c.whatsapp}?text=${encodeURIComponent(c.mensagemWhatsApp)}`;
+  document.getElementById('btnConfirmar').href = c.formConfirmacao;
 
   const historiaContainer = document.getElementById('timeline');
   c.historia.forEach((item, index) => {

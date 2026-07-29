@@ -16,8 +16,7 @@ const convite = {
     { ano: "2022", texto: "Nosso amor só cresceu e floresceu" },
     { ano: "2026", texto: "O dia em que prometemos eternidade" }
   ],
-  whatsapp: "5577999202792",
-  mensagemWhatsApp: "Olá! Confirmo minha presença no casamento de Maria Luiza & Felipe. Estarei lá! 😊",
+  formConfirmacao: "https://forms.gle/bpXzvUwwzcLupdiy6",
   googleMaps: "https://maps.app.goo.gl/kVwxq2sG9HtnNtjKA?g_st=aw",
   pix: "chavepix@mariaefelipe.com",
   listaPresentes: "https://www.example.com/lista-presentes",

@@ -51,7 +51,7 @@ function carregarDados() {
     placeholder.style.display = 'none';
     photoWrapper.insertBefore(img, placeholder);
     if (c.fotoFiltro && c.fotoFiltro !== 'none') {
-      photoWrapper.style.filter = c.fotoFiltro;
+      img.style.filter = c.fotoFiltro;
     }
   };
   img.onerror = () => {
@@ -158,6 +158,7 @@ function abrirCarta() {
     ease: 'power2.inOut',
     onComplete: () => {
       intro.style.display = 'none';
+      window.pJSDom?.[0]?.destroy?.();
       envelope.classList.add('active');
       envelope.style.display = 'flex';
       gsap.fromTo(envelope, { opacity: 0 }, { opacity: 1, duration: 0.6 });
@@ -336,7 +337,7 @@ function criarPetalas() {
   const container = document.getElementById('petalsContainer');
   const cores = ['#D4AF37', '#F0DFA0', '#C4956A', '#F5F0E8'];
   const isMobile = window.innerWidth < 768;
-  const count = isMobile ? 12 : 25;
+  const count = isMobile ? 6 : 25;
 
   for (let i = 0; i < count; i++) {
     const petal = document.createElement('div');

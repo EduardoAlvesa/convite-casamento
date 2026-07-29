@@ -33,6 +33,7 @@ body {
   background: var(--background);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   overscroll-behavior: none;
 }
 
@@ -857,8 +858,16 @@ button {
     height: 195px;
   }
 
+  .envelope-container::after {
+    inset: -12px;
+  }
+
   .envelope-hint {
     font-size: 0.6rem;
+  }
+
+  .letter-preview .initial {
+    font-size: 1.6rem;
   }
 
   .casal-photo-wrapper {
@@ -878,21 +887,23 @@ button {
 
   .timeline-dot {
     left: 20px;
+    width: 10px;
+    height: 10px;
   }
 
   .timeline-year {
-    min-width: 60px;
-    font-size: 1.5rem;
+    min-width: 55px;
+    font-size: 1.3rem;
   }
 
   .timeline-text {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
     text-align: left;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .countdown-grid {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .countdown-item {
@@ -910,7 +921,22 @@ button {
 
 @media (max-width: 480px) {
   .section {
-    padding: 2.5rem 1rem;
+    padding: 2rem 0.75rem;
+  }
+
+  .intro-content {
+    padding: 1rem;
+  }
+
+  .intro-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
   }
 
   .envelope-container {
@@ -919,7 +945,15 @@ button {
   }
 
   .convite-card {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .convite-names {
+    font-size: 1.5rem;
+  }
+
+  .convite-info-item .value {
+    font-size: 0.95rem;
   }
 
   .presente-option {
@@ -928,46 +962,150 @@ button {
     padding: 0.8rem;
   }
 
+  .presente-card {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .local-card {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .local-name {
+    font-size: 1.2rem;
+  }
+
   .btn-abrir {
-    padding: 0.9rem 2rem;
+    padding: 0.85rem 1.8rem;
     font-size: 0.7rem;
   }
 
   .btn-primary {
-    padding: 0.9rem 2rem;
+    padding: 0.85rem 1.5rem;
     font-size: 0.65rem;
+    width: 100%;
   }
 
   .casal-photo-wrapper {
     width: 160px;
     height: 160px;
+    margin-bottom: 2rem;
+  }
+
+  .casal-names {
+    font-size: 1.8rem;
+  }
+
+  .casal-photo-placeholder {
+    font-size: 3rem;
   }
 
   .timeline-item {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 
-  .local-card {
-    padding: 1.5rem 1rem;
+  .timeline-year {
+    font-size: 1.3rem;
+    min-width: 50px;
   }
 
-  .presente-card {
-    padding: 1.5rem 1rem;
+  .timeline-text {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .local-map {
+    height: 140px;
+  }
+
+  .confirmacao-text {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 360px) {
+  .section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .intro-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .intro-title {
+    font-size: 0.8rem;
+  }
+
   .envelope-container {
     width: 180px;
     height: 135px;
   }
 
+  .wax-seal {
+    width: 45px;
+    height: 45px;
+  }
+
+  .wax-seal::after {
+    font-size: 1.2rem;
+  }
+
+  .convite-card {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .convite-names {
+    font-size: 1.3rem;
+  }
+
+  .casal-photo-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+
+  .casal-names {
+    font-size: 1.5rem;
+  }
+
   .countdown-grid {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .countdown-item {
-    min-width: 50px;
+    min-width: 45px;
+  }
+
+  .countdown-number {
+    font-size: 1.6rem;
+  }
+
+  .countdown-label {
+    font-size: 0.55rem;
+  }
+
+  .local-map {
+    height: 120px;
+  }
+
+  .timeline-year {
+    font-size: 1.1rem;
+    min-width: 40px;
+  }
+
+  .timeline-text {
+    font-size: 0.85rem;
+  }
+
+  .despedida-text {
+    font-size: 1rem;
+  }
+
+  .presente-option {
+    padding: 0.6rem;
   }
 }
 

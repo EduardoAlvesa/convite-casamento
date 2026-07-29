@@ -12,13 +12,13 @@ const convite = {
   fotoFiltro: "grayscale(100%)",
   frasePrincipal: "E viveram felizes para sempre...",
   historia: [
-    { ano: "2019", texto: "O ano em que nossos caminhos se cruzaram" },
+    { ano: "2018", texto: "O ano em que nossos caminhos se cruzaram" },
     { ano: "2022", texto: "Nosso amor só cresceu e floresceu" },
     { ano: "2026", texto: "O dia em que prometemos eternidade" }
   ],
   whatsapp: "5577999202792",
   mensagemWhatsApp: "Olá! Confirmo minha presença no casamento de Maria Luiza & Felipe. Estarei lá! 😊",
-  googleMaps: "https://maps.google.com/?q=1%C2%B0+Igreja+Batista+Cassil%C3%A2ndia",
+  googleMaps: "https://maps.app.goo.gl/kVwxq2sG9HtnNtjKA?g_st=aw",
   pix: "chavepix@mariaefelipe.com",
   listaPresentes: "https://www.example.com/lista-presentes",
   mensagemPresentes: "Sua presença é o melhor presente! Mas se quiser nos ajudar nessa nova jornada, aceitamos com carinho contribuições via Pix ou nossa lista de presentes online.",

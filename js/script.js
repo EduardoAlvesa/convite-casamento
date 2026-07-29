@@ -167,10 +167,6 @@ function abrirCarta() {
 
       const envContainer = document.getElementById('envelopeContainer');
       envContainer.addEventListener('click', animarEnvelope, { once: true });
-      envContainer.addEventListener('touchend', (e) => {
-        e.preventDefault();
-        animarEnvelope();
-      }, { once: true });
     }
   });
 }

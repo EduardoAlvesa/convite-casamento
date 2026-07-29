@@ -56,7 +56,7 @@ button {
 /* === SECTION BASE === */
 .section {
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: var(--app-height, 100dvh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +168,7 @@ button {
 #envelope-section {
   background: var(--secondary);
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: var(--app-height, 100dvh);
   display: none;
 }
 

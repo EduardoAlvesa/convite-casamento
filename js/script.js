@@ -1,4 +1,19 @@
+function setAppHeight() {
+  const doc = document.documentElement;
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+}
+
+let appHeightTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(appHeightTimer);
+  appHeightTimer = setTimeout(setAppHeight, 300);
+});
+window.addEventListener('orientationchange', () => {
+  setTimeout(setAppHeight, 200);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+  setAppHeight();
   carregarDados();
   animarIntro();
   initParticles();

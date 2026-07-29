@@ -3,11 +3,6 @@ function setAppHeight() {
   doc.style.setProperty('--app-height', `${window.innerHeight}px`);
 }
 
-let appHeightTimer;
-window.addEventListener('resize', () => {
-  clearTimeout(appHeightTimer);
-  appHeightTimer = setTimeout(setAppHeight, 300);
-});
 window.addEventListener('orientationchange', () => {
   setTimeout(setAppHeight, 200);
 });
@@ -277,7 +272,7 @@ function animarElementos() {
       const el = document.getElementById(sec.id);
       el.classList.add('active');
       el.style.display = 'flex';
-      gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' });
+      gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'power2.out' });
 
       if (sec.type === 'convite') animarConviteInfo();
       if (sec.type === 'historia') animarTimeline();
@@ -285,7 +280,7 @@ function animarElementos() {
       if (sec.type === 'despedida') animarDespedida();
     }, delay);
 
-    delay += 1200;
+    delay += 400;
   });
 }
 
@@ -352,7 +347,7 @@ function criarPetalas() {
   const container = document.getElementById('petalsContainer');
   const cores = ['#D4AF37', '#F0DFA0', '#C4956A', '#F5F0E8'];
   const isMobile = window.innerWidth < 768;
-  const count = isMobile ? 6 : 25;
+  const count = isMobile ? 0 : 25;
 
   for (let i = 0; i < count; i++) {
     const petal = document.createElement('div');

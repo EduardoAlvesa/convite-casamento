@@ -25,13 +25,13 @@ const convite = {
   musica: "assets/music/trilha.mpeg",
   musicaHabilitada: true,
   paleta: {
-    primary: "#D4AF37",
-    primaryLight: "#F0DFA0",
-    secondary: "#F5F0E8",
-    background: "#FAF8F5",
+    primary: "#964F4C",
+    primaryLight: "#D4B0B0",
+    secondary: "#F5EDE8",
+    background: "#FAF5F2",
     text: "#2C2C2C",
     textLight: "#8A8A8A",
-    accent: "#C4956A",
+    accent: "#B87363",
     dark: "#1A1A1A",
     white: "#FFFFFF"
   }

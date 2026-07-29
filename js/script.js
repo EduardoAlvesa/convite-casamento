@@ -115,7 +115,7 @@ function initParticles() {
   particlesJS('particles-bg', {
     particles: {
       number: { value: isMobile ? 25 : 60, density: { enable: true } },
-      color: { value: '#d4af37' },
+      color: { value: '#964F4C' },
       shape: { type: 'circle' },
       opacity: { value: 0.3, random: true },
       size: { value: isMobile ? 1.5 : 2, random: true },
@@ -130,7 +130,7 @@ function initParticles() {
       line_linked: {
         enable: !isMobile,
         distance: 150,
-        color: '#d4af37',
+        color: '#964F4C',
         opacity: 0.1,
         width: 1
       }
@@ -345,7 +345,7 @@ function iniciarContagem() {
 
 function criarPetalas() {
   const container = document.getElementById('petalsContainer');
-  const cores = ['#D4AF37', '#F0DFA0', '#C4956A', '#F5F0E8'];
+  const cores = ['#964F4C', '#D4B0B0', '#B87363', '#F5EDE8'];
   const isMobile = window.innerWidth < 768;
   const count = isMobile ? 0 : 25;
 

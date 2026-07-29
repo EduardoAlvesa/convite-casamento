@@ -249,7 +249,8 @@ function mostrarConvite() {
     .fromTo('#casalPhotoWrapper', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2 }, '-=0.3')
     .fromTo('.casal-names', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, '-=0.4')
     .fromTo('#casalPhrase', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.3')
-    .fromTo('#casalDate', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.2');
+    .fromTo('#casalDate', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.2')
+    .fromTo('#scrollHint', { opacity: 0 }, { opacity: 1, duration: 0.8 }, '+=0.4');
 
   tl.to({}, { duration: 1.5, onComplete: animarElementos });
 }
